@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nerdcourt"
+version = "0.1.0"
+description = "Tools for staging playful canon-versus-fanon debates."
+authors = [
+  { name = "Nerd Court Contributors" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["debate", "storytelling", "fanfiction", "satire"]
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Topic :: Games/Entertainment"
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
